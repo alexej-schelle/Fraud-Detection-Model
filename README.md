@@ -1,10 +1,131 @@
-# Fraud-Prediction-Model
-Fraud Prediction Model for Bank and Insurance Data
+# 🕵️‍♂️ Fraud-Prediction-Model für Bank- und Versicherungsdaten
 
-Ziel der Studie ist es ein numerisches Modell zur Identifizierung von bekannten Fraud-Mustern in einem vorgegebenen Datensatz zu entwickeln. Dazu sollen zunächst aus unterschiedlichen Datensätzen (von Banken und Versicherungen) bekannte 
-Muster extrahiert werden, welche es erlauben, Fraud-Muster zu definieren. Aus diesen Fraud-Mustern soll ein  Algorithmus entwickelt werden, der diese bekannten Muster in einem neuen Datensatz erkennt und dem Nutzer der Software Hinweise darüber vermittelt, ob es sich bei bestimmten Transaktionen um bekannte Fraud-Muster handelt bzw. potentiell Fraud deklariert.
+## 📌 Abstract
 
-Dazu möchten wir im Kurs einerseits einen klassisch analytischen Ansatz verwenden, der erstmal einfach bekannte Fraud-Parameter zur Klassifizierung von Fraud nutzt, z.B. durch den Abgleich der Nutzerkonten mit den Transaktionsdaten. Die als Fraud bekannten Konten werden dann gespeichert und derart bei neuen Transaktionen Verdachtsfälle zur Prüfung deklariert. In einer Modellierung soll also ein neuer Datensatz nach den bekannten Kontendaten durchsucht werden.
+Diese wissenschaftliche Übersicht beschreibt die Konzeption, Methodik und Zielsetzung eines **Fraud-Prediction-Models** zur Identifikation betrügerischer Aktivitäten in Bank- und Versicherungsdatensätzen. Ziel ist die Entwicklung eines numerischen Modells, das bekannte Fraud-Muster aus historischen Daten extrahiert und diese Muster auf neue, unbekannte Datensätze anwendet. Der Ansatz kombiniert **klassisch-analytische Regelmodelle** mit **maschinellen Lernverfahren** (Logistische Regression und Support Vector Machines), um sowohl regelbasierte Verdachtsfälle als auch probabilistische Fraud-Vorhersagen zu ermöglichen.
 
-Komplexere Modellierungen mit Vorhersagecharakter der Fraudwahrscheinlichkeiten bzw. der Einstufung als Fraud oder nicht, wird im Rahmen der ML Modelle Logistische Regression und SVM genutzt. Die in der Vorlesung gemeinsam entwickelten Source Codes sollen bei den Studenten Anwendung finden, insofern als das Modell selbst installiert und (in der Klausur) zur Abschätzung von Modellparametern genutzt werden soll.
+---
+
+## 🎯 Zielsetzung der Studie
+
+Das primäre Ziel der Studie ist die Entwicklung eines softwaregestützten Analysemodells zur:
+
+* Identifikation **bekannter Fraud-Muster** in strukturierten Transaktions- und Kontodaten
+* Klassifikation neuer Transaktionen als *Fraud*, *Nicht-Fraud* oder *potentieller Fraud*
+* Unterstützung von Nutzern (z. B. Analysten oder Prüfern) durch **Hinweise und Verdachtskennzeichnungen**
+
+Die Studie ist didaktisch ausgelegt und dient der praktischen Anwendung von in der Vorlesung behandelten Modellen und Algorithmen durch Studierende.
+
+---
+
+## 🗂️ Datenbasis
+
+Die Modellierung basiert auf **heterogenen Datensätzen** aus dem Banken- und Versicherungsumfeld, u. a.:
+
+* Kontodaten (z. B. bekannte Fraud-Konten)
+* Transaktionsdaten (Zeit, Betrag, Empfänger, Herkunft)
+* Schadens- und Versicherungsfalldaten
+
+Diese Datensätze enthalten sowohl **labelled data** (bekannte Fraud-Fälle) als auch reguläre Transaktionen.
+
+---
+
+## 🔍 Methodischer Ansatz
+
+### 1️⃣ Klassisch-analytischer Ansatz (Rule-Based Fraud Detection)
+
+Der erste Modellierungsansatz folgt einem **deterministischen, regelbasierten Verfahren**:
+
+* Extraktion bekannter Fraud-Parameter (z. B. betrügerische Konten, IBANs, Schadensnummern)
+* Abgleich neuer Transaktionen mit einer **Fraud-Referenzliste**
+* Markierung übereinstimmender Transaktionen als *Verdachtsfall*
+
+📌 Vorteil:
+
+* Hohe Transparenz
+* Einfach interpretierbar
+
+⚠️ Nachteil:
+
+* Keine Generalisierung auf neue, unbekannte Fraud-Muster
+
+---
+
+### 2️⃣ Maschinelle Lernverfahren (Predictive Fraud Modeling)
+
+Zur Erweiterung des Modells werden **überwachte Lernverfahren** eingesetzt, die eine **Vorhersagewahrscheinlichkeit für Fraud** liefern.
+
+#### 🔹 Logistische Regression
+
+* Binäres Klassifikationsmodell (Fraud / Nicht-Fraud)
+* Schätzung von Modellparametern über Maximum-Likelihood
+* Gut interpretierbar durch Koeffizienten
+
+#### 🔹 Support Vector Machine (SVM)
+
+* Trennlinien-basierter Klassifikator
+* Besonders geeignet für hochdimensionale Daten
+* Nutzung von Kernel-Funktionen zur Modellierung nichtlinearer Zusammenhänge
+
+📌 Beide Modelle werden mit den in der Vorlesung entwickelten Source Codes implementiert und von den Studierenden praktisch angewendet.
+
+---
+
+## ⚙️ Systemarchitektur (konzeptionell)
+
+1. **Datenimport** (Bank- und Versicherungsdaten)
+2. **Feature Engineering** (Extraktion relevanter Fraud-Merkmale)
+3. **Rule-Based Screening**
+4. **ML-basierte Klassifikation**
+5. **Ausgabe von Fraud-Hinweisen** an den Nutzer
+
+---
+
+## 📊 Evaluation und Anwendung
+
+Die Modelle können anhand klassischer Metriken evaluiert werden:
+
+* Accuracy
+* Precision / Recall
+* ROC-AUC
+
+Im Rahmen der Klausur sollen die Studierenden:
+
+* Modelle installieren
+* Parameter schätzen
+* Fraud-Wahrscheinlichkeiten interpretieren
+
+---
+
+## 🧩 Didaktischer Mehrwert
+
+✔ Verbindung von Theorie und Praxis
+✔ Vergleich von regelbasierten und ML-Ansätzen
+✔ Förderung von Modellverständnis und Interpretierbarkeit
+
+---
+
+## 📚 Referenz
+
+Projekt-Repository und Aufgabenstellung:
+
+🔗 *Fraud-Detection-Model* (GitHub, README.md)
+
+---
+
+## 🎨 Icons & Favicons (optional)
+
+Für eine spätere Software- oder Web-Integration können folgende Icons genutzt werden:
+
+* 🕵️‍♀️ Fraud Detection
+* ⚠️ Verdachtsfall
+* 📊 Analyse / Statistik
+* 🏦 Bank / 🛡️ Versicherung
+
+Diese unterstützen die visuelle Nutzerführung und erhöhen die Usability des Systems.
+
+---
+
+*Ende der wissenschaftlichen Übersicht*
+
 
