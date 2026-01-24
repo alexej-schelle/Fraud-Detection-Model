@@ -99,9 +99,9 @@ Im Rahmen der Klausur sollen die Studierenden:
 
 ## 🧩 Didaktischer Mehrwert
 
-✔ Verbindung von Theorie und Praxis 
-✔ Vergleich von regelbasierten und ML-Ansätzen 
-✔ Förderung von Modellverständnis und Interpretierbarkeit 
+✔ Verbindung von Theorie und Praxis  
+✔ Vergleich von regelbasierten und ML-Ansätzen  
+✔ Förderung von Modellverständnis und Interpretierbarkeit  
 
 ---
 
