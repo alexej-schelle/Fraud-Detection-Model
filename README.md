@@ -113,24 +113,13 @@ Projekt-Repository und Aufgabenstellung:
 
 ---
 
-## 🎨 Icons & Favicons (optional)
 
-Für eine spätere Software- oder Web-Integration können folgende Icons genutzt werden:
-
-* 🕵️‍♀️ Fraud Detection 
-* ⚠️ Verdachtsfall 
-* 📊 Analyse / Statistik 
-* 🏦 Bank / 🛡️ Versicherung 
-
-Diese unterstützen die visuelle Nutzerführung und erhöhen die Usability des Systems.
+Alles klar 🙂
+Hier ist die **Deutsche Version**, passend formatiert zu deiner englischen Markdown-Struktur:
 
 ---
 
-Gerne 🙂 Hier ist die **englische Übersetzung** in sachlich-technischem Stil:
-
----
-
-# Installation on Linux and macOS Operating Systems
+## Installation unter Linux- und macOS-Betriebssystemen
 
 ---
 
@@ -138,21 +127,21 @@ Gerne 🙂 Hier ist die **englische Übersetzung** in sachlich-technischem Stil:
 git clone https://github.com/alexej-schelle/TextmailEncryption.git
 ```
 
-and start the software using the corresponding Python files.
+und starten Sie die Software mit den entsprechenden Python-Dateien.
 
 ---
 
-# Installation on Windows Operating Systems
+## Installation unter Windows-Betriebssystemen
 
 ---
 
-Download the files from
+Laden Sie die Dateien von
 [https://github.com/alexej-schelle/TextmailEncryption/](https://github.com/alexej-schelle/TextmailEncryption/)
-and start the software using the corresponding Python files.
+herunter und starten Sie die Software mit den entsprechenden Python-Dateien.
 
 ---
 
-# Documentation for Linux, macOS, and Windows Operating Systems
+## Dokumentation für Linux-, macOS- und Windows-Betriebssysteme
 
 ---
 
@@ -160,25 +149,25 @@ and start the software using the corresponding Python files.
 git clone https://github.com/alexej-schelle/TextmailEncryption/
 ```
 
-and read `docs/README.txt`.
+und lesen Sie die Datei `docs/README.txt`.
 
 ---
 
-# Documented Application Scenarios
+## Dokumentierte Anwendungsszenarien
 
 ---
 
-Please visit [https://www.iu.org/](https://www.iu.org/) or contact
+Bitte besuchen Sie
+[https://www.iu.org/](https://www.iu.org/)
+oder kontaktieren Sie
 [alexej.schelle.ext@iu.org](mailto:alexej.schelle.ext@iu.org).
 
 ---
 
-# Author
+## Autor
 
 ---
 
-* FH Lecturer Dr. A. Schelle
-
----
+* FH-Dozent Dr. A. Schelle
 
 ---
